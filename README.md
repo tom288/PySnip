@@ -1,5 +1,5 @@
 # day.py
-> Day night cycle implemented using fog  
+> Day night cycle implemented using continuous changes to the fog  
 > Fully compatible with disco  
 > RGB interpolation is used, which is ugly if the night sky is not black  
 
