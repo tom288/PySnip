@@ -5,9 +5,7 @@ RGB interpolation is used, which is ugly if the night sky is not black
 """
 
 import math
-
 from twisted.internet.task import LoopingCall
-
 import commands
 
 COL_DAY = (68, 138, 255) # Blue daytime sky

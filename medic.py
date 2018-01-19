@@ -17,6 +17,8 @@ def apply_script(protocol, connection, config):
             and self.team == hit_player.team
             and self.weapon == SHOTGUN_WEAPON):
                 hit_player.set_hp(hit_player.hp + HEAL_RATE, type = MELEE_KILL)
+                if (hit_player.hp >= 100): # If the target has full health
+                     connection.send_chat(self.name + ' is all healed up!')
             return connection.on_hit(self, hit_amount, hit_player,
                 type, grenade)
 
